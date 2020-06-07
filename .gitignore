@@ -1,0 +1,155 @@
+# Default ignored files
+/workspace.xml
+
+
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Generated files
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
+
+# CMake
+cmake-build-*/
+
+# Mongo Explorer plugin
+.idea/**/mongoSettings.xml
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
+
+### .gitignore template
+# Created by .ignore support plugin (hsz.mobi)
+
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+.idea/vcs.xml
+rebrand-subs/
+captions/
+page_*.jpeg
+Subtitles
+documents/
+.env/
+logs.txt
+data.db
+*.key
+*.indd
+.DS_Store
+.vscode/
+__pycache__/
+*.scriv
+*.pyc
+*.screenflow
+*.mp4
+*.mov
+*.cmproj
+exports/
+videos/
+*.numbers
+*.sketch
+
+venv/
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Book.bson
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/User.bson
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Book.metadata.json
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Publisher.metadata.json
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/User.metadata.json
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/system.indexes.bson
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Publisher.bson
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/owners.metadata.json
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/cars.bson
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/cars.metadata.json
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/owners.bson
+
+
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/User.bson
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/cars.bson
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/system.indexes.bson
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Publisher.bson
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Book.bson
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/User.metadata.json
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/owners.metadata.json
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/owners.bson
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Book.metadata.json
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Publisher.metadata.json
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/cars.metadata.json
+/100_databases/003_mongodb/_exercises/templates/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/bookstore/bookstore/Book.bson
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/bookstore/bookstore/Book.metadata.json
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/bookstore/bookstore/Publisher.bson
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/bookstore/bookstore/Publisher.metadata.json
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/bookstore/bookstore/User.bson
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/bookstore/bookstore/system.indexes.bson
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/bookstore/bookstore/User.metadata.json
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/dealership_db_250k/dealership/owners.metadata.json
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/dealership_db_250k/dealership/cars.metadata.json
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/dealership_db_250k/dealership/cars.bson
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/dealership_db_250k/dealership/owners.bson
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/README.md
