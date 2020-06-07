@@ -3,33 +3,36 @@
 # These methods extract files to the current directory by default. They both take an optional path parameter
 # that allows you to specify a different directory to extract files to. If the directory does not exist,
 # it is automatically created. To extract files from the archive, do the following:
-#
-# >>> import zipfile
-# >>> import os
-#
-# >>> os.listdir('.')
+
+import zipfile
+import os
+
+os.listdir('.')
+
 # ['data.zip']
-#
-# >>> data_zip = zipfile.ZipFile('data.zip', 'r')
-#
-# >>> # Extract a single file to current directory
-# >>> data_zip.extract('file1.py')
+
+data_zip = zipfile.ZipFile('data.zip', 'r')
+
+# Extract a single file to current directory
+data_zip.extract('file1.py')
+
 # '/home/terra/test/dir1/zip_extract/file1.py'
-#
-# >>> os.listdir('.')
+
+os.listdir('.')
+
 # ['file1.py', 'data.zip']
-#
-# >>> # Extract all files into a different directory
-# >>> data_zip.extractall(path='extract_dir/')
-#
-# >>> os.listdir('.')
+
+# Extract all files into a different directory
+data_zip.extractall(path='extract_dir/')
+
+os.listdir('.')
 # ['file1.py', 'extract_dir', 'data.zip']
-#
-# >>> os.listdir('extract_dir')
+
+os.listdir('extract_dir')
 # ['file1.py', 'file3.py', 'file2.py', 'sub_dir']
-#
-# >>> data_zip.close()
-#
+
+data_zip.close()
+
 # The third line of code is a call to os.listdir(), which shows that the current directory has only one file, data.zip.
 #
 # Next, you open data.zip in read mode and call .extract() to extract file1.py from it. .extract() returns

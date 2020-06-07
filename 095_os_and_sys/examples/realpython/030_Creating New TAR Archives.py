@@ -1,16 +1,17 @@
 # Here’s how you do it:
-#
-# >>> import tarfile
-#
-# >>> file_list = ['app.py', 'config.py', 'CONTRIBUTORS.md', 'tests.py']
-# >>> with tarfile.open('packages.tar', mode='w') as tar:
-# ...     for file in file_list:
-# ...         tar.add(file)
-#
-# >>> # Read the contents of the newly created archive
-# >>> with tarfile.open('package.tar', mode='r') as t:
-# ...     for member in t.getmembers():
-# ...         print(member.name)
+
+import tarfile
+
+file_list = ['app.py', 'config.py', 'CONTRIBUTORS.md', 'tests.py']
+with tarfile.open('packages.tar', mode='w') as tar:
+    for file in file_list:
+        tar.add(file)
+
+# Read the contents of the newly created archive
+with tarfile.open('package.tar', mode='r') as t:
+    for member in t.getmembers():
+        print(member.name)
+
 # app.py
 # config.py
 # CONTRIBUTORS.md
@@ -25,13 +26,14 @@
 # contained in it.
 #
 # To add new files to an existing archive, open the archive in append mode ('a'):
-#
-# >>> with tarfile.open('package.tar', mode='a') as tar:
-# ...     tar.add('foo.bar')
-#
-# >>> with tarfile.open('package.tar', mode='r') as tar:
-# ...     for member in tar.getmembers():
-# ...         print(member.name)
+
+with tarfile.open('package.tar', mode='a') as tar:
+    tar.add('foo.bar')
+
+with tarfile.open('package.tar', mode='r') as tar:
+   for member in tar.getmembers():
+       print(member.name)
+
 # app.py
 # config.py
 # CONTRIBUTORS.md

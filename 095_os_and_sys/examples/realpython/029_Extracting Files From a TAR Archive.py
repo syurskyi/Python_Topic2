@@ -6,8 +6,12 @@
 #
 # To extract a single file from a TAR archive, use extract(), passing in the filename:
 #
-# >>> tar.extract('README.md')
-# >>> os.listdir('.')
+
+import tar
+import os
+
+tar.extract('README.md')
+os.listdir('.')
 # ['README.md', 'example.tar']
 #
 # The README.md file is extracted from the archive to the file system. Calling os.listdir() confirms
@@ -38,11 +42,11 @@
 #
 # To extract a file object for reading or writing, use .extractfile(), which takes a filename or TarInfo object
 # to extract as an argument. .extractfile() returns a file-like object that can be read and used:
-#
-# >>> f = tar.extractfile('app.py')
-# >>> f.read()
-# >>> tar.close()
-#
+
+f = tar.extractfile('app.py')
+f.read()
+tar.close()
+
 # Opened archives should always be closed after they have been read or written to. To close an archive, call .close()
 # on the archive file handle or use the with statement when creating tarfile objects to automatically close
 # the archive when you’re done. This frees up system resources and writes any changes you made to the archive

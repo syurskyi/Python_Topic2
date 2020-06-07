@@ -4,19 +4,20 @@
 #
 # Here’s how to create a temporary file:
 #
-# from tempfile import TemporaryFile
-#
-# # Create a temporary file and write some data to it
-# fp = TemporaryFile('w+t')
-# fp.write('Hello universe!')
-#
-# # Go back to the beginning and read data from file
-# fp.seek(0)
-# data = fp.read()
-#
-# # Close the file, after which it will be removed
-# fp.close()
-#
+import os
+from tempfile import TemporaryFile
+
+# Create a temporary file and write some data to it
+fp = TemporaryFile('w+t')
+fp.write('Hello universe!')
+
+# Go back to the beginning and read data from file
+fp.seek(0)
+data = fp.read()
+
+# Close the file, after which it will be removed
+fp.close()
+
 # The first step is to import TemporaryFile from the tempfile module. Next, create a file like object using
 # the TemporaryFile() method by calling it and passing the mode you want to open the file in. This will create and open
 # a file that can be used as a temporary storage area. In the example above, the mode is 'w+t', which makes tempfile
@@ -31,22 +32,23 @@
 # and directories in the current directory. .TemporaryFile() is also a context manager so it can be used in conjunction
 # with the with statement. Using a context manager takes care of closing and deleting the file automatically after it
 # has been read:
-#
-# with TemporaryFile('w+t') as fp:
-#     fp.write('Hello universe!')
-#     fp.seek(0)
-#     fp.read()
-# # File is now closed and removed
-#
+
+with TemporaryFile('w+t') as fp:
+    fp.write('Hello universe!')
+    fp.seek(0)
+    fp.read()
+# File is now closed and removed
+
 # This creates a temporary file and reads data from it. As soon as the file’s contents are read, the temporary file is
 # closed and deleted from the file system.
 # tempfile can also be used to create temporary directories. Let’s look at how you can do this using tempfile.TemporaryDirectory():
-#
-# >>> import tempfile
-# >>> with tempfile.TemporaryDirectory() as tmpdir:
-# ...     print('Created temporary directory ', tmpdir)
-# ...     os.path.exists(tmpdir)
-# ...
+
+import tempfile
+with tempfile.TemporaryDirectory() as tmpdir:
+    print('Created temporary directory ', tmpdir)
+    os.path.exists(tmpdir)
+
+
 # Created temporary directory  /tmp/tmpoxbkrm6c
 # True
 #

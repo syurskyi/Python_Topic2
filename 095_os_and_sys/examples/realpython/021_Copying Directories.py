@@ -4,8 +4,9 @@
 #
 # Here’s an example of how to copy the contents of one folder to a different location:
 #
-# >>> import shutil
-# >>> shutil.copytree('data_1', 'data1_backup')
+import shutil
+shutil.copytree('data_1', 'data1_backup')
+
 # 'data1_backup'
 #
 # In this example, .copytree() copies the contents of data_1 to a new location data1_backup and returns the destination

@@ -1,11 +1,11 @@
 # Python supports reading data from multiple input streams or from a list of files through the fileinput module.
 # This module allows you to loop over the contents of one or more text files quickly and easily. Here’s the typical
 # way fileinput is used:
-#
-# import fileinput
-# for line in fileinput.input()
-#     process(line)
-#
+
+import fileinput
+for line in fileinput.input():
+    process(line)
+
 # fileinput gets its input from command line arguments passed to sys.argv by default.
 #
 # Using fileinput to Loop Over Multiple Files

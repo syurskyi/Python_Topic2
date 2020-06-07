@@ -2,12 +2,12 @@
 # and lzma compression methods. The TarFile class allows reading and writing of TAR archives.
 #
 # Do this to read from an archive:
-#
-# import tarfile
-#
-# with tarfile.open('example.tar', 'r') as tar_file:
-#     print(tar_file.getnames())
-#
+
+import tarfile
+
+with tarfile.open('example.tar', 'r') as tar_file:
+    print(tar_file.getnames())
+
 # tarfile objects open like most file-like objects. They have an open() function that takes a mode
 # that determines how the file is to be opened.
 #
@@ -26,11 +26,12 @@
 #
 # .open() defaults to 'r' mode. To read an uncompressed TAR file and retrieve the names
 # of the files in it, use .getnames():
-#
-# >>> import tarfile
-#
-# >>> tar = tarfile.open('example.tar', mode='r')
-# >>> tar.getnames()
+
+import tarfile
+import time
+
+tar = tarfile.open('example.tar', mode='r')
+tar.getnames()
 # ['CONTRIBUTING.rst', 'README.md', 'app.py']
 #
 # This returns a list with the names of the archive contents.
@@ -41,12 +42,13 @@
 # Normally, you would want to use a context manager to open file-like objects.
 #
 # The metadata of each entry in the archive can be accessed using special attributes:
-#
-# >>> for entry in tar.getmembers():
-# ...     print(entry.name)
-# ...     print(' Modified:', time.ctime(entry.mtime))
-# ...     print(' Size    :', entry.size, 'bytes')
-# ...     print()
+
+for entry in tar.getmembers():
+    print(entry.name)
+    print(' Modified:', time.ctime(entry.mtime))
+    print(' Size    :', entry.size, 'bytes')
+    print()
+
 # CONTRIBUTING.rst
 #  Modified: Sat Nov  1 09:09:51 2018
 #  Size    : 402 bytes

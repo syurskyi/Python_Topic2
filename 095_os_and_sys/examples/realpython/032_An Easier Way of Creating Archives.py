@@ -9,17 +9,17 @@
 # a different directory. .make_archive() supports the zip, tar, bztar, and gztar archive formats.
 #
 # This is how to create a TAR archive using shutil:
-#
-# import shutil
-#
-# # shutil.make_archive(base_name, format, root_dir)
-# shutil.make_archive('data/backup', 'tar', 'data/')
-#
+
+import shutil
+
+# shutil.make_archive(base_name, format, root_dir)
+shutil.make_archive('data/backup', 'tar', 'data/')
+
 # This copies everything in data/ and creates an archive called backup.tar in the filesystem and returns its name.
 # To extract the archive, call .unpack_archive():
-#
-# shutil.unpack_archive('backup.tar', 'extract_dir/')
-#
+
+shutil.unpack_archive('backup.tar', 'extract_dir/')
+
 # Calling .unpack_archive() and passing in an archive name and destination directory extracts the contents
 # of backup.tar into extract_dir/. ZIP archives can be created and extracted in the same way.
 
