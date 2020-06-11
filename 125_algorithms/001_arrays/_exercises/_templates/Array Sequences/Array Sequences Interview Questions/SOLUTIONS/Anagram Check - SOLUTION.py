@@ -51,25 +51,25 @@
 #         r_ F..
 #
 #     # Create counting dictionary (Note could use DefaultDict from Collections module)
-#     count =
+#     count _  # dict
 #
 #     # Fill dictionary for first string (add counts)
-#     ___ letter __ _1
-#         __ l? __ c..
-#             c.. ? +_ 1
+#     ___ letter __ ?
+#         __ ? __ ?
+#             ? ? +_ 1
 #         ____
-#             c.. ? _ 1
+#             ? ? _ 1
 #
 #     # Fill dictionary for second string (subtract counts)
-#     ___ letter __ _2
-#         __ ? __ c..
-#             c.. ? -_ 1
+#     ___ letter __ ?
+#         __ ? __ ?
+#             ? ? -_ 1
 #         ____
-#             c.. ? _ 1
+#             ? ? _ 1
 #
 #     # Check that all counts are 0
-#     ___ k __ c..
-#         __ c.. ? !_ 0
+#     ___ k __ ?
+#         __ ? ? !_ 0
 #             r_ F..
 #
 #     # Otherwise they're anagrams
