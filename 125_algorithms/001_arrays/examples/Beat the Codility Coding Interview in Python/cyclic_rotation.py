@@ -3,7 +3,7 @@
 # This is marked as PAINLESS difficulty
 
 def solution(A, K):
-    result = [None] * len(A)
+    result = [None] * len(A)   # Alocate space for a new array, a new array having the same length as our input array A
 
     for i in range(len(A)):
         result[(i + K) % len(A)] = A[i]
