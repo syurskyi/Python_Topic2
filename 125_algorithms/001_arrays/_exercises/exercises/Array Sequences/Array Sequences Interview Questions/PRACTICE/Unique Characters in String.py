@@ -4,7 +4,7 @@
 #
 # ## Problem
 # Given a string,determine if it is compreised of all unique characters. For example, the string 'abcde' has all unique
-#  characters and should return True. The string 'aabcde' contains duplicate characters and should return false.
+#  characters and should return T... The string 'aabcde' contains duplicate characters and should return false.
 # '''
 #
 # # %%
@@ -44,20 +44,20 @@
 # """
 # RUN THIS CELL TO TEST YOUR CODE>
 # """
-# from nose.tools import assert_equal
+# ____ n__.t.. ____ a_e..
 #
 #
-# class TestUnique(object):
+# c_ TestUnique o..
 #
-#     ___ test(self, sol):
-#         assert_equal(sol(''), True)
-#         assert_equal(sol('goo'), False)
-#         assert_equal(sol('abcdefg'), True)
+#     ___ test  sol
+#         a_e.. ? ''), T..
+#         a_e.. ? 'goo'), F..
+#         a_e.. ? 'abcdefg'), T..)
 #         print('ALL TEST CASES PASSED')
 #
 # # Run Tests
-# t = TestUnique()
-# t.test(uni_char)
+# t _ ?
+# ?.t.. ?
 #
 # # %%
 # '''

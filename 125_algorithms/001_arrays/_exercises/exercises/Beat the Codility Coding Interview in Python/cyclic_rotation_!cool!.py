@@ -10,6 +10,6 @@ def solution(A, K):
 
     return result
 
-print(solution([1, 2, 3, 4, 5], 2))
+print(solution(1, 2, 3, 4, 5), 2)
 
-print(solution([1, 2, 3, 4, 5], 4))
+print(solution(1, 2, 3, 4, 5), 5)

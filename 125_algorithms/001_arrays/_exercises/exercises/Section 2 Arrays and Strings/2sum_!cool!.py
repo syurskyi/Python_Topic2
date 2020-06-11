@@ -15,14 +15,15 @@
 # # Brute force O(n^2)
 # # O(n) + O(n)
 #
-# def twosum(nums, target):
-# 	dic = {}
+# ___ twosum nums target
+# 	dic _    # dcit
 #
-# 	for i in range(len(nums)):
-# 		if nums[i] in dic.keys():
-#             return [dic[nums[i]], i]
-#       else:
-# d..|t.. - n..|?|| _ ?
+# 	___ i __ ra.. le. ?
+# 		__ ? ? __ d__.ke..
+# 			r_ |d..|n.. ?|| ?
+#       ____
+#
+# 			d..|t.. - n..|?|| _ ?
 #
 # 	r_    # list
 #

@@ -1,82 +1,82 @@
-# %%
-'''
-# Sentence Reversal
-## Problem
-Given a string of words, reverse all the words. For example:
-Given:
-    'This is the best'
-Return:
-    'best the is This'
-As part of this exercise you should remove all leading and trailing whitespace. So that inputs such as:
-    '  space here'  and 'space here      '
-both become:
-    'here space'
-## Solution
-Fill out your solution below:
-'''
-
-# %%
-def rev_word(s):
-    return " ".join(reversed(s.split()))
-    pass
-
-# %%
-print(rev_word('Hi John,   are you ready to go?'))
-
-# %%
-print(rev_word('    space before'))
-
-# %%
-print(rev_word('space after     '))
-
-# %%
-'''
-## Learn
-- " ".join()
-- reversed()
-- s.split()
-'''
-
-# %%
-# reversed()
-'''
-Init signature: reversed(self, /, *args, **kwargs)
-Docstring:
-reversed(sequence) -> reverse iterator over values of the sequence
-
-Return a reverse iterator
-Type:           type
-'''
-
-# %%
-'''
-_____
-'''
-
-# %%
-'''
-# Test Your Solution
-'''
-
-# %%
-"""
-RUN THIS CELL TO TEST YOUR SOLUTION
-"""
+# # %%
+# '''
+# # Sentence Reversal
+# ## Problem
+# Given a string of words, reverse all the words. For example:
+# Given:
+#     'This is the best'
+# Return:
+#     'best the is This'
+# As part of this exercise you should remove all leading and trailing whitespace. So that inputs such as:
+#     '  space here'  and 'space here      '
+# both become:
+#     'here space'
+# ## Solution
+# Fill out your solution below:
+# '''
 #
-# from nose.tools import assert_equal
+# # %%
+# ___ rev_word s
+#     r_ " ".j.. re.. ?.s..
+#     p..
 #
-# class ReversalTest(object):
+# # %%
+# ? ('Hi John,   are you ready to go?')
 #
-#     def test(self,sol):
-#         assert_equal(sol('    space before'),'before space')
-#         assert_equal(sol('space after     '),'after space')
-#         assert_equal(sol('   Hello John    how are you   '),'you are how John Hello')
-#         assert_equal(sol('1'),'1')
+# # %%
+# ? ('    space before')
+#
+# # %%
+# ? ('space after     ')
+#
+# # %%
+# '''
+# ## Learn
+# - " ".join()
+# - reversed()
+# - s.split()
+# '''
+#
+# # %%
+# # reversed()
+# '''
+# Init signature: reversed  /, *args, **kwargs)
+# Docstring:
+# reversed(sequence) -> reverse iterator over values of the sequence
+#
+# Return a reverse iterator
+# Type:           type
+# '''
+#
+# # %%
+# '''
+# _____
+# '''
+#
+# # %%
+# '''
+# # Test Your Solution
+# '''
+#
+# # %%
+# """
+# RUN THIS CELL TO TEST YOUR SOLUTION
+# """
+#
+# ____ n__.t.. ____ a_e..
+#
+# c_ ReversalTest o..
+#
+#     ___ test sol
+#         a_e.. ? '    space before'),'before space')
+#         a_e.. ? 'space after     '),'after space')
+#         a_e.. ? '   Hello John    how are you   '),'you are how John Hello')
+#         a_e.. ? '1'),'1')
 #         print ("ALL TEST CASES PASSED")
 #
 # # Run and test
-# t = ReversalTest()
-# t.test(rev_word)
+# t _ ?
+# ?.t.. ?
 #
 # # %%
 # '''
