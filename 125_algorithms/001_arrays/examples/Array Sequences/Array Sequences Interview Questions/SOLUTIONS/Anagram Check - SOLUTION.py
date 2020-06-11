@@ -29,11 +29,7 @@ def anagram(s1,s2):
 
 # %%
 anagram('dog','god')
-
-# %%
 anagram('clint eastwood','old west action')
-
-# %%
 anagram('aa','bb')
 
 # %%
@@ -83,11 +79,7 @@ def anagram2(s1,s2):
 
 # %%
 anagram2('dog','god')
-
-# %%
 anagram2('clint eastwood','old west action')
-
-# %%
 anagram2('dd','aa')
 
 # %%
