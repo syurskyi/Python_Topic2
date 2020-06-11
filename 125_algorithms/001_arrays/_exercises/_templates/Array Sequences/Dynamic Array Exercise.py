@@ -50,62 +50,62 @@
 # '''
 # 
 # # %%
-# _________ ct
-# 
+# _________ ct...
+#
 # 
 # c_ DynamicArray o..
 #     '''
 #     DYNAMIC ARRAY CLASS (Similar to Python List)
 #     '''
 # 
-#     ___ -  ____
-#         ____.n _ 0  # Count actual elements (Default is 0)
-#         ____.capacity _ 1  # Default Capacity
-#         ____.A _ ____.make_array ____.c...
+#     ___ -
+#         n _ 0  # Count actual elements (Default is 0)
+#         capacity _ 1  # Default Capacity
+#         A _ m_a.. c...
 # 
 #     ___ -  ____
 #         """
 #         Return number of elements sorted in array
 #         """
-#         r_ ____.n
+#         r_ n
 # 
-#     ___ -g  ____ k
+#     ___ -g k
 #         """
 #         Return element at index k
 #         """
-#         i_ no. 0 <_ k < ____.n
-#             r_ _I...('K is out of bounds!')  # Check it k index is in bounds of array
+#         __ no. 0 <_ k < n
+#             r_ I...('K is out of bounds!')  # Check it k index is in bounds of array
 # 
-#         r_ ____.A k  # Retrieve from array at index k
+#         r_ A k  # Retrieve from array at index k
 # 
-#     ___ append ____ ele
+#     ___ append ele
 #         """
 #         Add element to end of the array
 #         """
-#         i_ ____.n __ ____.c...
-#             ____._res..(2 * ____.ca..  # Double capacity if not enough room
+#         __ n __ c...
+#             _res..(2 * ca..  # Double capacity if not enough room
 # 
-#         ____.A ____.n _ e..  # Set ____.n index to element
-#         ____.n +_ 1
+#         A n _ e..  # Set ____.n index to element
+#         n +_ 1
 # 
-#     ___ _resize ____ new_cap
+#     ___ _resize new_cap
 #         """
 #         Resize internal array to capacity new_cap
 #         """
 # 
-#         B = ____.make_array n..  # New bigger array
+#         B _ make_array n..  # New bigger array
 # 
-#         ___ k i_ ra.. ____.n  # Reference all existing values
-#             B k _ ____.A k
+#         ___ k __ ra.. n  # Reference all existing values
+#             B k _ A k
 # 
-#         ____.A _ B  # Call A the new bigger array
-#         ____.c... = n...  # Reset the capacity
+#         A _ B  # Call A the new bigger array
+#         c... = n...  # Reset the capacity
 # 
-#     ___ make_array ____ new_cap
+#     ___ make_array new_cap
 #         """
 #         Returns a new array with new_cap capacity
 #         """
-#         r_ n.. * ct___.py_object
+#         r_ |n.. * ct___.py_object
 # 
 # 
 # # %%

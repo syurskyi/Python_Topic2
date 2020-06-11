@@ -112,7 +112,9 @@ arr.append(1)
 
 # %%
 # Check length
-len(arr)
+print()
+print()
+print(len(arr))
 
 # %%
 # Append new element
@@ -120,14 +122,14 @@ arr.append(2)
 
 # %%
 # Check length
-len(arr)
+print(len(arr))
 
 # %%
 # Index
-arr[0]
+print(arr[0])
 
 # %%
-arr[1]
+print(arr[1])
 
 # %%
 '''
