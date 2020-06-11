@@ -102,6 +102,9 @@ exports/
 videos/
 *.numbers
 *.sketch
+*.PNG
+*.png
+*.pdf
 
 venv/
 ### Example user template template
