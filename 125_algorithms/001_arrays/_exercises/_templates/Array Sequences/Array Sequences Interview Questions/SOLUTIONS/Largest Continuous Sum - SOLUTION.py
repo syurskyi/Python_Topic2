@@ -23,10 +23,10 @@
 #     # For every element in array
 #     ___ num __ ? 1;
 #         # Set current sum as the higher of the two
-#         c.. + ma. c.. + ? ?
+#         c.. _ ma. c.. + ? ?   # ? ? the same
 #
 #         # Set max as the higher between the currentSum and the current max
-#         m.. _ ma. c.. m..
+#         m.. _ ma. ? ?
 #
 #     r_ ?
 #
