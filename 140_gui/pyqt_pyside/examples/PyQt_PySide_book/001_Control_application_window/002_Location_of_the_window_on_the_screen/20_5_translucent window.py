@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtGui
+from PyQt5 import QtGui, QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("translucent window")
 window.resize(300, 100)
 window.setWindowOpacity(0.1)

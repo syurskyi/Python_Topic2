@@ -1,15 +1,15 @@
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 import sys
 
 
-class SampleWindow(QtGui.QWidget):
+class SampleWindow(QtWidgets.QWidget):
     def __init__(self):
         super(SampleWindow, self).__init__()
         self.setWindowTitle("Customize Window Hint")
         self.resize(300, 70)
         self.setWindowFlags(QtCore.Qt.Window |
                               QtCore.Qt.CustomizeWindowHint)
-        btn = QtGui.QPushButton("Close window", self)
+        btn = QtWidgets.QPushButton("Close window", self)
         btn.setGeometry(50, 10, 200, 30)
         QtCore.QObject.connect(btn, QtCore.SIGNAL("clicked()"), app.quit)
         # desktop = QtGui.QApplication.desktop()
@@ -22,7 +22,7 @@ def main():
     # app = QtGui.QApplication(sys.argv)
     global window
     window = SampleWindow()
-    desktop = QtGui.QApplication.desktop()
+    desktop = QtWidgets.QApplication.desktop()
     x = (desktop.width() - window.width()) // 2
     y = (desktop.height() - window.height()) // 2
     window.move(x, y)
