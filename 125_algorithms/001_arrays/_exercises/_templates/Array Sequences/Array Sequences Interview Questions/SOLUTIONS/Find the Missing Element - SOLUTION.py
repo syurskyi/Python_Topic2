@@ -24,22 +24,22 @@
 # # simultaneously. Once two iterators have different values we can stop. The value of the first iterator is the missing
 # # element. This solution is also O(NlogN). Here is the solution for this approach:
 #
-# # ___ finder(arr1, arr2
+# # ___ finder arr1 arr2
 # #     # Sort the arrays
-# #     arr1.sort()
-# #     arr2.sort()
+# #     ?.s..
+# #     ?.s..
 # #
 # #     # Compare elements in the sorted arrays
-# #     for num1, num2 in zip(arr1, arr2
-# #         if num1 != num2:
-# #             return num1
+# #     ___ num1 num2 __ z.. ? ?
+# #         __ ? != ?
+# #             r_ ?1
 # #
 # #     # Otherwise return last element
-# #     return arr1[-1]
+# #     r_ ?1 -1
 # #
 # # arr1 = [1,2,3,4,5,6,7]
 # # arr2 = [3,7,2,1,4,6]
-# # print(finder(arr1,arr2))
+# # print ? ? ?
 #
 # # 5
 #
@@ -55,16 +55,16 @@
 #
 #     # Add a count for every instance in Array 1
 #     ___ num __ _2
-#         d n.. +_ 1
+#         ? ? +_ 1
 #
 #         # Check if num not in dictionary
 #     ___ num __ _1
-#         __ d ? __ 0
-#             r_ n..
+#         __ ? ? __ 0
+#             r_ ?
 #
 #             # Otherwise, subtract a count
 #         ____
-#             d ? -_ 1
+#             ? ? -_ 1
 #
 # arr1 = [5,5,7,7]
 # arr2 = [5,7,7]
@@ -83,13 +83,13 @@
 #     result _ 0
 #
 #     # Perform an XOR between the numbers in the arrays
-#     ___ num __ _1 + _2
-#         r.. ^_ ?
+#     ___ num __ ? + ?
+#         r.. *_ ?
 #         print ?
 #
 #     r_ ?
 #
-# ? _1,a_2
+# ? ? ?
 #
 # # Test Your Solution
 #
